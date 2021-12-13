@@ -54,7 +54,6 @@
       <button :class="$style.button" :disabled="$v.form.$invalid" type="submit">
         <span :class="$style.t">Добавить товар</span>
       </button>
-      {{ mask }}
     </form>
   </div>
 </template>
@@ -106,19 +105,6 @@ export default {
     }
   },
   computed: {
-    mask: {
-      get() {
-        if (this.form.price) {
-          const maskedPrice = parseInt(this.form.price)
-          return maskedPrice.toLocaleString()
-        }
-        return 0
-      },
-      set(value) {
-        console.log()
-        this.form.price = +value.replace(/\s/g, "")
-      }
-    },
     titleError() {
       return this.$v.form.title.$error
     },
