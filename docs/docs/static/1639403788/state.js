@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002Fdocs\u002Fstatic\u002F1639403788",layout:"default",error:a,state:{goods:{goods:[],sort:""}},serverRendered:true,routePath:b,config:{_app:{basePath:b,assetsPath:"\u002Fdocs\u002F",cdnURL:a}}}}(null,"\u002F"));

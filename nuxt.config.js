@@ -5,6 +5,9 @@ export default {
   generate: {
     dir: 'docs'
   },
+  router : {
+    base : ''
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
