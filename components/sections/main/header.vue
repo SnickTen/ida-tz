@@ -86,6 +86,7 @@ export default {
   color: #B4B4B4;
   position: relative;
   cursor: pointer;
+  z-index: 10;
   .t {
     font-size: 1.2em;
     line-height: 1.25;
