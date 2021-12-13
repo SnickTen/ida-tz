@@ -1,0 +1,13 @@
+:root {
+  --root-font-size: 0.695vw;
+  --root-layout-offset: 3.2rem;
+  --root-color-bg: #FAF9F7;
+  --root-color-text: #3F3F3F;
+  @include down(xxl) {
+    --root-font-size: 1.041666vw;
+  }
+  @include down(md) {
+    --root-font-size: 2.7vw;
+    --root-layout-offset: 1.6rem;
+  }
+}

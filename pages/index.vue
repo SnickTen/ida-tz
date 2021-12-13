@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import SectionMain from '../components/sections/main'
+import SectionMain from '../components/sections/main/index'
 export default {
   components: {
     SectionMain

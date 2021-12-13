@@ -1,0 +1,32 @@
+@mixin down($breakpoint) {
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin down-height($breakpoint) {
+  @media screen and (max-height: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin up($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin background-image($src) {
+  background-image: $src;
+  .webp & {
+    background-image: "#{$src}&f=webp";
+  }
+  .avif & {
+    background-image: "#{$src}&f=avif";
+  }
+}
+@mixin touchDevice() {
+  @media (hover:none), (pointer: coarse) {
+    @content
+  }
+}
