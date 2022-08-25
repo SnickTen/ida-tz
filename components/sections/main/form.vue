@@ -132,7 +132,9 @@ export default {
   .container {
     padding: 2.4em;
     color: #49485E;
-    background: #FFFEFB;
+    background-color: #FFFEFB;
+    background-image: url("@/assets/images/test-image.png");
+    background-repeat: no-repeat;
     box-shadow: 0 2em 3em rgba(0, 0, 0, 0.04), 0 .6em 1em rgba(0, 0, 0, 0.02);
     border-radius: .4em;
   }
